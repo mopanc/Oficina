@@ -1,38 +1,22 @@
-import React from "react"
-import { Layout, Menu, Breadcrumb } from 'antd';
-import { Button } from 'antd';
-import { DashboardOutlined, MailOutlined } from '@ant-design/icons';
-//import { useState } from 'react';
+import React from 'react';
+import { Form, Layout } from 'antd';
+import 'antd/dist/antd.css';
 import './App.css';
 
-const { Header, Content, Footer } = Layout;
-const { SubMenu } = Menu;
+const { Content, Footer } = Layout;
 
-function App () {
-  //const [collapsed, setCollapsed] = useState(false);
+function App() {
 
-  return <Layout className="layout">
-  <Header>
-
-    <Menu theme="dark" mode="horizontal" defaultSelectedKeys={['2']}>
-      <Button type="primary" shape="round" icon={<MailOutlined />} style={{ margin: '0 50px' }} size={10}>
-        Agendar Serviço
-      </Button>
-      <Button type="primary" shape="round" icon={<DashboardOutlined />} size={10}>
-        Administração
-      </Button>
-    </Menu>
-  </Header>
-  <Content style={{ padding: '0 50px' }}>
-    <Breadcrumb style={{ margin: '16px 0' }}>
-      <Breadcrumb.Item>Home</Breadcrumb.Item>
-      <Breadcrumb.Item>List</Breadcrumb.Item>
-      <Breadcrumb.Item>App</Breadcrumb.Item>
-    </Breadcrumb>
-    <div className="site-layout-content">Content</div>
-  </Content>
-  <Footer style={{ textAlign: 'center' }}>Ant Design ©2021 Created by Ant UED</Footer>
-</Layout>
+  return (
+    <Layout className="site-layout">
+      <Content style={{ margin: '0 16px' }}>
+        <div className="site-layout-background" style={{ padding: 24, minHeight: 360 }}>
+          Oficina.
+        </div>
+      </Content>
+      <Footer style={{ textAlign: 'center' }}>©2021 Created by Jorge Morais</Footer>
+    </Layout>
+  );
 }
 
-export default App
+export default App;
