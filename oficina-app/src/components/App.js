@@ -1,14 +1,15 @@
+import React from "react"
 import { Layout, Menu, Breadcrumb } from 'antd';
 import { Button } from 'antd';
 import { DashboardOutlined, MailOutlined } from '@ant-design/icons';
-import { useState } from 'react';
+//import { useState } from 'react';
 import './App.css';
 
 const { Header, Content, Footer } = Layout;
 const { SubMenu } = Menu;
 
 function App () {
-  const [collapsed, setCollapsed] = useState(false);
+  //const [collapsed, setCollapsed] = useState(false);
 
   return <Layout className="layout">
   <Header>
