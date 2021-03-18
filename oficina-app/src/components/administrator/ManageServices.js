@@ -65,42 +65,42 @@ function App() {
       key: 'id'
     },
     {
-      title: 'Registration',
+      title: 'Placa',
       dataIndex: 'registration',
       key: 'registration'
     },
     {
-      title: 'Name',
+      title: 'Nome',
       dataIndex: 'name',
       key: 'name'
     },
     {
-      title: 'Service_kind',
+      title: 'Tipo de agendamento',
       dataIndex: 'service_kind',
       key: 'service_kind'
     },
     {
-      title: 'Description ',
+      title: 'Descriçao',
       dataIndex: 'description ',
       key: 'description '
     },
     {
-      title: 'Date',
+      title: 'Data',
       dataIndex: 'date',
       key: 'date'
     },
     {
-      title: 'Hour',
+      title: 'Hora',
       dataIndex: 'hour',
       key: 'hour'
     },
     {
-      title: 'Status',
+      title: 'Estado',
       dataIndex: 'status',
       key: 'status'
     },
     {
-      title: 'Actions',
+      title: 'Ações',
       key: 'actions',
       render: (fila) => (
         <>
@@ -190,22 +190,25 @@ function App() {
       ]}
       >
         <Form {...layout}>
-          <Item label="Registration">
+          <Item label="Placa">
             <Input name="registration" onChange={handleChange} value={service && service.registration} />
           </Item>
-          <Item label="Name">
+          <Item label="Nome">
             <Input name="name" onChange={handleChange} value={service && service.name} />
           </Item>
-          <Item label="Service_kind">
+          <Item label="Tipo de serviço">
             <Input name="service_kind" onChange={handleChange} value={service && service.service_kind} />
           </Item>
-          <Item label="Date">
+          <Item label="Data">
             <Input name="date" onChange={handleChange} value={service && service.date} />
           </Item>
-          <Item label="Hour">
+          <Item label="Hora">
             <Input name="hour" onChange={handleChange} value={service && service.hour} />
           </Item>
-          <Item label="Status">
+          <Item label="Descrição">
+            <Input name="description" onChange={handleChange} value={service && service.description} />
+          </Item>
+          <Item label="Estado">
             <Select
               label="Status"
               placeholder="Select a option and change input text above"

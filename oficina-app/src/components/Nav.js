@@ -30,8 +30,7 @@ function Nav() {
     service_kind: '',
     description : '',
     date: '',
-    hour: '',
-    status: '',
+    hour: ''
   })
 
   const openCloseModalInsert=()=>{
@@ -129,7 +128,7 @@ function Nav() {
 
       <Modal
       visible={modalInsert}
-      title="Insert Service"
+      title="Agendar serviço"
       destroyOnClose={true}
       onCancel={openCloseModalInsert}
       centered
@@ -139,23 +138,23 @@ function Nav() {
       ]}
       >
         <Form {...layout}>
-          <Item label="Registration">
+          <Item label="Placa">
             <Input name="registration" onChange={handleChange} value={service && service.registration}/>
           </Item>
-          <Item label="Name">
+          <Item label="Nome">
             <Input name="name" onChange={handleChange} />
           </Item>
-          <Item label="Service_kind">
+          <Item label="Tipo de Atendimento">
             <Input name="service_kind" onChange={handleChange} />
           </Item>
-          <Item label="Date">
+          <Item label="Data">
             <Input name="date" onChange={handleChange} />
           </Item>
-          <Item label="Hour">
+          <Item label="Hora">
             <Input name="hour" onChange={handleChange} />
           </Item>
-          <Item label="Status">
-            <Input name="status" onChange={handleChange} />
+          <Item label="Descrição">
+            <Input name="description" onChange={handleChange} />
           </Item>
         </Form>
       </Modal>
