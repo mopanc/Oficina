@@ -70,7 +70,7 @@ function ServiceKindCrud() {
       key: 'description'
     },
     {
-      title: 'Preço',
+      title: 'Preço base',
       dataIndex: 'price',
       key: 'price'
     },
@@ -173,7 +173,7 @@ function ServiceKindCrud() {
           <Item label="Descrição">
             <Input name="description" onChange={handleChange} />
           </Item>
-          <Item label="Preço">
+          <Item label="Preço base">
             <Input name="price" onChange={handleChange} />
           </Item>
           <Item label="Data">

@@ -1,103 +1,38 @@
 {
   "services": [
     {
-      "registration": "aaa",
-      "name": "Jigsaw777777777",
-      "service_kind": "asa",
-      "description": "",
-      "date": "as",
-      "hour": "asa",
-      "status": "asa",
-      "id": 4
-    },
-    {
-      "registration": "aaa",
-      "name": "Jigsaw777777777",
-      "service_kind": "asa",
-      "description": "",
-      "date": "as",
-      "hour": "asa",
-      "status": "asa",
-      "id": 5
-    },
-    {
-      "registration": "w",
-      "name": "Jigsaw777777777",
-      "service_kind": "asa",
-      "description": "",
-      "date": "as",
-      "hour": "asa",
-      "status": "asa",
-      "id": 6
-    },
-    {
-      "registration": "w",
-      "name": "Jigsaw777777777",
-      "service_kind": "asa",
-      "description": "",
-      "date": "as",
-      "hour": "asa",
-      "status": "asa",
-      "id": 7
-    },
-    {
-      "registration": "w",
-      "name": "Jigsaw777777777",
-      "service_kind": "asa",
-      "description": "",
-      "date": "as",
-      "hour": "asa",
-      "status": "asa",
-      "id": 8
-    },
-    {
-      "registration": "teste",
-      "name": "teste",
-      "service_kind": "teste",
-      "description": "",
-      "date": "teste",
-      "hour": "teste",
-      "status": "teste",
-      "id": 9
-    },
-    {
-      "registration": "aaa",
-      "name": "Jigsaw",
-      "service_kind": "asa",
-      "description": "",
-      "date": "",
-      "hour": "",
-      "status": "",
-      "id": 10
-    },
-    {
-      "registration": "aaa",
-      "name": "aa",
-      "service_kind": "aa",
-      "description": "",
-      "date": "aa",
-      "hour": "aa",
-      "status": "",
-      "id": 11
-    },
-    {
-      "registration": "MHjkhvkjhv",
-      "name": "Joooo",
+      "registration": "1234poi",
+      "name": "Antonio",
       "service_kind": "troca de oleo",
-      "description": "",
-      "date": "31865213474423145214",
-      "hour": "324231",
-      "status": "",
-      "id": 12
+      "description": "Troca de oleo e filtro ",
+      "date": "10/04/21",
+      "hour": "09:00",
+      "id": 1
+    },
+    {
+      "registration": "5678ASD",
+      "name": "Maria ",
+      "service_kind": "troca de oleo",
+      "description": "Troca de oleo e filtro ",
+      "date": "01/01/2022",
+      "hour": "09:00",
+      "id": 2
     }
   ],
   "service_kinds": [
     {
-      "name": "Revisão Auto 100000 Km",
+      "name": "Revisão Auto 12000 Km",
       "description": "Revisão",
-      "price": "3500",
-      "date": "1010101",
+      "price": "R$ 500.00",
+      "date": "01/01/2020",
       "id": 6
+    },
+    {
+      "name": "Verificação do trocador de calor",
+      "description": "verificar trocador de calor da embraiagem ",
+      "price": "1000",
+      "date": "01/01/2020",
+      "id": 7
     }
   ]
 }
