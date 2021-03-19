@@ -1,18 +1,12 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import Nav from './components/Nav';
-import App from './App';
-import Admin from './components/administrator/Administrator'
-import './App.css';
-import 'antd/dist/antd.css';
-import { BrowserRouter, Switch, Route } from 'react-router-dom'
+import React from 'react'
+import { Switch, Route, Redirect } from 'react-router'
 
-ReactDOM.render(
-  <BrowserRouter>
-    <Nav />
+import Home from './App'
+import Administrator from './components/administrator/Administrator'
+
+export default props =>
     <Switch>
-      <Route path="/" exact={true} component={App} />
-      <Route path="/administrators" component={Admin} />
+        <Route exact path='/' component={Home} />
+        <Route path='/administrators' component={Administrator} />
+        <Redirect from='*' to='/' />
     </Switch>
-  </ BrowserRouter>
-  , document.getElementById('root'));
