@@ -50,6 +50,19 @@ npm install
 npm start
 ```
 
+# run Server
+```bash
+# Open other terminal
+
+# go into the folder
+cd Oficina/
+cd api-server/
+
+```
+```bash
+npm start
+```
+
 
 The credits of this project belong to Jorge Morais
 
