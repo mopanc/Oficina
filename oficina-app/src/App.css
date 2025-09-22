@@ -1,5 +1,347 @@
+/* Reset global */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
+  min-height: 100vh;
+}
+
+.App {
+  min-height: 100vh;
+}
+
+/* Layout principal */
 .site-layout {
-  min-height: 280px;
-  padding: 4rem;
-  background: #fff;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #ecf0f1 0%, #bdc3c7 100%);
+}
+
+/* Layout para administração */
+.admin-layout {
+  min-height: 100vh;
+  background: white;
+}
+
+/* Header com cores masculinas de oficina */
+.ant-layout-header {
+  background: linear-gradient(135deg, #2c3e50 0%, #34495e 50%, #1a252f 100%) !important;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  padding: 0 50px;
+  height: 80px !important;
+  line-height: 80px !important;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 4px solid #e67e22;
+}
+
+/* Logo/Brand styling */
+.header-brand {
+  color: white !important;
+  font-size: 28px;
+  font-weight: bold;
+  text-decoration: none;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  letter-spacing: 1px;
+}
+
+.header-brand:hover {
+  color: #f0f0f0 !important;
+  transform: scale(1.05);
+  transition: all 0.3s ease;
+}
+
+/* Botões do header com cores de oficina */
+.header-buttons {
+  display: flex;
+  gap: 15px;
+}
+
+.header-button {
+  background: linear-gradient(135deg, #e67e22, #d35400) !important;
+  border: 2px solid #f39c12 !important;
+  color: white !important;
+  border-radius: 8px !important;
+  padding: 0 25px !important;
+  height: 50px !important;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  box-shadow: 0 4px 15px rgba(230, 126, 34, 0.4);
+  transition: all 0.3s ease;
+}
+
+.header-button:hover,
+.header-button:focus {
+  background: linear-gradient(135deg, #f39c12, #e67e22) !important;
+  border-color: #f1c40f !important;
+  color: white !important;
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(230, 126, 34, 0.6);
+}
+
+.header-button a {
+  color: white !important;
+  text-decoration: none;
+}
+
+/* Card containers */
+.modern-card {
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  margin: 20px 0;
+  border: none;
+}
+
+/* Main content area com tema de oficina */
+.main-content {
+  background: linear-gradient(135deg, #ecf0f1 0%, #bdc3c7 100%);
+  min-height: calc(100vh - 80px);
+  padding: 40px 20px;
+}
+
+.welcome-section {
+  text-align: center;
+  background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
+  border-radius: 15px;
+  padding: 60px 40px;
+  margin: 0 auto;
+  max-width: 1000px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+  border: 3px solid #e67e22;
+  position: relative;
+  overflow: hidden;
+}
+
+.welcome-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 5px;
+  background: linear-gradient(90deg, #e67e22, #f39c12, #e67e22);
+}
+
+.welcome-title {
+  font-size: 48px;
+  font-weight: 800;
+  color: #2c3e50;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.welcome-subtitle {
+  font-size: 20px;
+  color: #666;
+  margin-bottom: 30px;
+  line-height: 1.6;
+}
+
+.welcome-description {
+  font-size: 16px;
+  color: #888;
+  line-height: 1.8;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Tabela moderna */
+.ant-table {
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.ant-table-thead > tr > th {
+  background: linear-gradient(135deg, #2c3e50, #34495e) !important;
+  color: white !important;
+  border: none !important;
+  text-align: center;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.ant-table-tbody > tr:hover > td {
+  background: #f8f9fa !important;
+}
+
+/* Modal moderno */
+.ant-modal {
+  border-radius: 15px;
+}
+
+.ant-modal-header {
+  background: linear-gradient(135deg, #2c3e50, #34495e);
+  border-radius: 15px 15px 0 0;
+}
+
+.ant-modal-title {
+  color: white;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.ant-modal-close {
+  color: white;
+}
+
+.ant-modal-close:hover {
+  color: #f0f0f0;
+}
+
+.ant-modal-body {
+  padding: 30px;
+}
+
+/* Footer moderno */
+.ant-layout-footer {
+  background: linear-gradient(135deg, #2c3e50, #34495e) !important;
+  color: white !important;
+  text-align: center;
+  border-top: none;
+  font-weight: 500;
+  box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* Botões gerais */
+.ant-btn-primary {
+  background: linear-gradient(135deg, #e67e22, #d35400);
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  box-shadow: 0 4px 15px rgba(230, 126, 34, 0.4);
+  transition: all 0.3s ease;
+}
+
+.ant-btn-primary:hover,
+.ant-btn-primary:focus {
+  background: linear-gradient(135deg, #f39c12, #e67e22);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(230, 126, 34, 0.6);
+}
+
+/* Inputs modernos */
+.ant-input {
+  border-radius: 8px;
+  border: 2px solid #e8e8e8;
+  padding: 10px 15px;
+  transition: all 0.3s ease;
+}
+
+.ant-input:hover,
+.ant-input:focus {
+  border-color: #e67e22;
+  box-shadow: 0 0 0 2px rgba(230, 126, 34, 0.2);
+}
+
+/* Animações */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0) translateX(-50%);
+  }
+  40% {
+    transform: translateY(-10px) translateX(-50%);
+  }
+  60% {
+    transform: translateY(-5px) translateX(-50%);
+  }
+}
+
+.fade-in {
+  animation: fadeIn 0.6s ease-out;
+}
+
+/* Hero banner enhancements */
+.hero-banner {
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-banner::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(45deg, rgba(44, 62, 80, 0.1), rgba(52, 73, 94, 0.1));
+  z-index: 1;
+}
+
+/* Parallax effect for hero section */
+.parallax-bg {
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+}
+
+/* Enhanced button hover effects */
+.hero-button {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-button::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.3);
+  transition: width 0.6s, height 0.6s;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+}
+
+.hero-button:hover::before {
+  width: 300px;
+  height: 300px;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  .ant-layout-header {
+    padding: 0 20px;
+    flex-direction: column;
+    height: auto !important;
+    line-height: normal !important;
+    padding: 15px 20px;
+  }
+
+  .header-buttons {
+    margin-top: 10px;
+  }
+
+  .welcome-title {
+    font-size: 36px;
+  }
+
+  .welcome-section {
+    padding: 40px 20px;
+    margin: 20px;
+  }
 }

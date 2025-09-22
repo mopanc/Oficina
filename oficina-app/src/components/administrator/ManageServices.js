@@ -175,7 +175,7 @@ function App() {
   }, []);
 
   return (
-    <div className="site-layout">
+    <div>
       <Divider plain>Gerir Agendamentos</Divider>
       <Table columns={columns} dataSource={data} />
 

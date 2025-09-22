@@ -148,7 +148,7 @@ function ServiceKindCrud() {
   }, []);
 
   return (
-    <div className="site-layout">
+    <div>
       <Divider plain>Tipos de Atendimento</Divider>
       <Button type="secondary" className="buttonInsertKind" onClick={openCloseModalInsert}>Adicionar Tipo de Atendimento</Button>
       <br />

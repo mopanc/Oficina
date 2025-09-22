@@ -8,7 +8,6 @@ import { BrowserRouter, Switch, Route } from 'react-router-dom'
 
 ReactDOM.render(
   <BrowserRouter>
-    <Nav />
     <Routes />
-  </ BrowserRouter>
+  </BrowserRouter>
   , document.getElementById('root'));
